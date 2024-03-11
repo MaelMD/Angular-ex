@@ -1,0 +1,16 @@
+class Animal {
+    name: string;
+    constructor(theName: string) { this.name = theName; }
+    move(distanceInMeters: number = 0) {
+        console.log(`${this.name} moved ${distanceInMeters}m.`);
+    }
+}
+
+class Dog extends Animal {
+    move(distanceInMeters?: number): void {
+        
+    }
+}
+
+let pupp = new Dog("Budd");
+pupp.move(25);
